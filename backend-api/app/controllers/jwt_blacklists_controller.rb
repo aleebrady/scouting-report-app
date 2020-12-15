@@ -1,2 +1,0 @@
-class JwtBlacklistsController < ApplicationController
-end
