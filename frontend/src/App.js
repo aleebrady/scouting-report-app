@@ -4,12 +4,14 @@ import {BrowserRouter as Router, Route, Switch} from 'react-router-dom'
 import Home from "./components/Home"
 import TeamIndex from "./components/TeamIndex"
 import TeamForm from "./components/TeamForm"
+import Nav from "./components/Nav"
 
 
 function App() {
   return (
     <div className="App">
       <Router>
+        <Nav />
         <Switch>
           <Route exact path="/" component={Home} />
           <Route exact path="/teams" component={TeamIndex} />
