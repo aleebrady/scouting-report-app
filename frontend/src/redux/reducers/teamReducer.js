@@ -1,7 +1,7 @@
 function teamReducer(state = { all: [] }, action) {
     switch(action.type) {
         case "fetch_team_success":
-            return { ...state, teams: action.payload }
+            return { ...state, all: action.payload }
         default:
             return state
     }
